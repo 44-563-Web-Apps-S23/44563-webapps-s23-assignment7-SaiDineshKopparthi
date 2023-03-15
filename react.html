@@ -33,11 +33,12 @@
         }
 
         function startTime() {
-            for (let i = 0; i < 9; i++) {
+            let countVar =  Math.floor(Math.random()*9 + 2)
+            for (let i = 0; i < countVar+1; i++) {
                 setTimeout(
                     function () {
                         document.getElementById('counter').innerHTML = i
-                    }, (8 - i) * 1000)
+                    }, (countVar - i) * 1000)
             }
             setTimeout(
                 function () {
